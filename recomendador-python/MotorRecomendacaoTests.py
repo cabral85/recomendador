@@ -10,11 +10,11 @@ class Testes(unittest.TestCase):
     def retornoMapReduceTest(self):
         lista = ['11']
         retorno = mapReduce(lista)
-        self.assertEqual(retorno[0], {"url": "www.globoplay.globo.com/v/11"})
+        self.assertEqual(retorno[0], {"url": "v/11"})
 
     def validaMaisDeUmRetorno(self):
         lista = ['12','13']
-        validaRetorno = [{"url": "www.globoplay.globo.com/v/12"}, {"url": "www.globoplay.globo.com/v/13"}]
+        validaRetorno = [{"url": "v/12"}, {"url": "v/13"}]
         retorno = mapReduce(lista)
         self.assertListEqual(validaRetorno, retorno)
 
@@ -25,7 +25,7 @@ class Testes(unittest.TestCase):
 
     def validaRecomendacao(self):
         dao.set___limpaLista()
-        validaRetorno = [{"url": "www.globoplay.globo.com/v/3"}]
+        validaRetorno = [{"url": "v/3"}]
         dao.set___listaProduto(['user1','5'])
         dao.set___listaProduto(['user1','1'])
         dao.set___listaProduto(['user2','1'])
