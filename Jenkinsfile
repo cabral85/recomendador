@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('pull') {
       steps {
-        git(url: 'https://github.com/cabral85/recomendador.git', branch: 'master')
+        git(url: 'https://github.com/cabral85/recomendador.git', branch: 'master', credentialsId: 'gitCredential')
       }
     }
   }
