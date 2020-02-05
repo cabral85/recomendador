@@ -26,22 +26,6 @@ de chave composta.
 
 Está implementado também o swagger com a documentação do REST, http://localhost:8080/swagger-ui.html
 
-
-## Desafios
-
-Eu gostaria de ter utilizado o Mahout com o Java, mas optei por não utiliza-lo para demonstrar o conceito de MapReduce que ele utilizaria de forma automática,
-assim eu implementei métodos que fazem esse trabalhando mapeando os dados e categorizando-os.
-
-Eu também gostaria de poder ter implementado o SpringSecurity, ele faria toda a parte de validação de usuário, etc., porém, creio que isso prolongaria um pouco 
-mais o desenvolvimento.
-
-## Não Implementado
-
-* Desculpem não implementei a parte de chamada do curl -d "user=user1", pois não sei como é essa passagem de parâmetro, eu busquei na internet, porém não achei, devo ter procurado errado.
-* Não consegui criar o .configure, apenas o make, entendi que o .configure faz o trabalho de validar as depencias, etc., mas ainda não consegui entender o funcionamento dele o suficiente para utiliza-lo.
-* Para o deploy em diversos servidores só tenho como experiência utilizar scripts shell com chaves ssh ou o Jenkins que também vai utilizar shell script ou script python, só encontrei o Ansible, mas ainda não consegui trabalhar com ele.
-* Caso eu receba a oportunidade, conseguirei me ajustar rapidamente e adquirir o conhecimento que falta
-
 ## Testes
 
 Realizei testes alimentando as visualizações e depois validando as recomendações
